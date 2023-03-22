@@ -20,7 +20,13 @@ Route::post('mentors', 'MentorController@create');
 Route::put('mentors/{id}', 'MentorController@update');
 Route::delete('mentors/{id}', 'MentorController@destroy');
 
+Route::get('courses', 'CourseController@index');
 Route::post('courses', 'CourseController@create');
 Route::put('courses/{id}', 'CourseController@update');
-Route::get('courses', 'CourseController@index');
 Route::delete('courses/{id}', 'CourseController@destroy');
+
+Route::get('chapters', 'ChapterController@index');
+Route::post('chapters', 'ChapterController@create');
+Route::put('chapters/{id}', 'ChapterController@update');
+Route::get('chapters/{id}', 'ChapterController@show');
+Route::delete('chapters/{id}', 'ChapterController@destroy');
